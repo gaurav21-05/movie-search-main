@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Search and Playlist</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="loader-container" id="loaderContainer">
+      <div class="loader"></div>
+    </div>
+    <div class="container">
+      <h1>Movie Search</h1>
+      <input type="text" id="searchInput" placeholder="Search for movies..." />
+      <button id="searchButton">Search</button>
+      <div id="searchResults" class="movies-container"></div>
+    </div>
+
+    <div class="container">
+      <h1>Playlists</h1>
+      <input
+        type="text"
+        id="playlistInput"
+        placeholder="Enter playlist name..."
+      />
+      <button id="createPublicPlaylist">Create Public Playlist</button>
+      <button id="createPrivatePlaylist">Create Private Playlist</button>
+      <div id="publicPlaylists"></div>
+      <div id="privatePlaylists"></div>
+    </div>
+
+    <div id="publicPlaylists" class="playlists-container"></div>
+    <div id="privatePlaylists" class="playlists-container"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
